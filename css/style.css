@@ -17,7 +17,6 @@ nav{
 }
 
 section{
-    /* background-color: yellow; */
     width: 100%;
     min-height: 100vh;
 }
@@ -33,6 +32,7 @@ section{
 
 .navbar-brand{
     font-weight: 600;
+    color: yellow !important;
 }
 
 .nav-link{
@@ -42,19 +42,63 @@ section{
 }
 
 .nav-link:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid yellow;
 }
 
 /* Home */
 
 #home{
     width: 100%;
-    min-width: 100vh;
+    height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url('../img/model 2.jpg');
-    /* background-position: center; */
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+#home p{
+    position: absolute;
+    top: 50%;
+    font-size: 100px;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+
+#home  p:nth-child(1){
+    animation-delay: 0s;
+}
+#home  p:nth-child(2){
+    animation-delay: 3s;
+}
+#home  p:nth-child(3){
+    animation-delay: 6s;
+}
+#home  p:nth-child(4){
+    animation-delay: 9s;
+}
+
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-widh:576px){
+    #home p{
+      color: red !important;
+    }
+}
+
+#home p span{
+    color: yellow;
 }
 
 
-
+ 
