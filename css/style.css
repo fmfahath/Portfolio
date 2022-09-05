@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:wght@100;300;400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' , 'sans-sarif';
+    font-family: 'poppins', 'sans-sarif';
 }
 
-nav{
+nav {
     width: 100%;
     position: sticky;
     top: 0;
@@ -16,45 +16,43 @@ nav{
     z-index: 10;
 }
 
-section{
+section {
     width: 100%;
     min-height: 100vh;
 }
 
 /* navbar */
 
-.navbar{
+.navbar {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 10;
 }
 
-.navbar-brand{
-    
-}
+.navbar-brand {}
 
-.navbar-brand span{
+.navbar-brand span {
     font-weight: 600;
     color: yellow !important;
 }
 
-.nav-link{
+.nav-link {
     font-weight: 300;
     color: white !important;
     border-bottom: 1px solid transparent;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     border-bottom: 1px solid yellow;
 }
 
 /* Home */
 
-#home{
+#home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url('../img/model 2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('../img/model 2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +63,7 @@ section{
     flex-direction: column;
 }
 
-#home p{
+#home p {
     position: absolute;
     top: 50%;
     font-size: 100px;
@@ -73,35 +71,39 @@ section{
     animation: text 3s ease-in-out;
 }
 
-#home  p:nth-child(1){
+#home p:nth-child(1) {
     animation-delay: 0s;
 }
-#home  p:nth-child(2){
+
+#home p:nth-child(2) {
     animation-delay: 3s;
 }
-#home  p:nth-child(3){
+
+#home p:nth-child(3) {
     animation-delay: 6s;
 }
-#home  p:nth-child(4){
+
+#home p:nth-child(4) {
     animation-delay: 9s;
 }
 
-@keyframes text{
-    50%{
+@keyframes text {
+    50% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
 
-@media screen and (max-width:576px){
-    #home p{
-     font-size: 70px;
+@media screen and (max-width:576px) {
+    #home p {
+        font-size: 70px;
     }
 }
 
-#home p span{
+#home p span {
     color: yellow;
 }
 
@@ -112,24 +114,86 @@ section{
     justify-content: center;
     align-items: center;
     background-color: yellow;
+
 }
 
-.circle{
+.circle {
     width: 400px;
     height: 400px;
+    margin-top: 80px;
     background-color: black;
     border-radius: 50% !important;
     position: relative;
     box-shadow: -5px 12px 12px rgba(0, 0, 0, 0.5);
+    transition: 1s;
 }
 
-.circle img{
+.circle img {
     position: absolute;
     top: -25%;
     left: -25px;
     height: 450px;
     width: 450px;
     filter: drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.5));
+    transition: 1s;
 }
 
- 
+.circle:hover {
+    width: 800px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px !important;
+    position: relative;
+    box-shadow: -5px 12px 12px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+.circle:hover img {
+    content: url('../img/model\ 3.png');
+    transition: 1s;
+    height: 350px;
+    width: 350px;
+    top: 12%;
+    left: 60%;
+}
+
+.circle #hover {
+    color: black;
+    font-size: 100px;
+    background-color: transparent;
+    position: absolute;
+    top: 30%;
+    left: -80%;
+    transition: 1s;
+}
+
+.circle #me {
+    color: black;
+    font-size: 100px;
+    background-color: transparent;
+    position: absolute;
+    top: 30%;
+    left: 105%;
+    transition: 1s;
+}
+
+.circle .sub-content {
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 60px;
+    color: white !important;
+    width: 60%;
+    transition: 1s;
+
+}
+
+.circle:hover h1 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.circle:hover .sub-content {
+    opacity: 1;
+    transition: 1s;
+}
