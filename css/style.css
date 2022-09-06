@@ -18,7 +18,7 @@ nav {
 
 section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh !important;
 }
 
 /* navbar */
@@ -239,3 +239,53 @@ section {
         transition: 1s;
     }
 }
+
+/* skills */
+
+#skills{
+    background-color: black;
+    color: white;
+    padding-top: 5%;
+    
+}
+
+#skills h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+#skills .container{
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container .progress{
+   
+    transition: 0.5s;
+}
+
+.container .progress-bar{
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+    transition: 0.5s;
+   
+}
+
+#skills label{
+    font-size: 17px;
+}
+
+.container .progress:hover{
+    height: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 2px gray;
+    transition: 0.5s;
+}
+
+.container .progress:hover .progress-bar{
+    background-color: rgb(255, 221, 0);
+}
+
+
