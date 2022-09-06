@@ -261,7 +261,7 @@ section {
 }
 
 .container .progress{
-   
+    height: 20px;
     transition: 0.5s;
 }
 
@@ -278,7 +278,7 @@ section {
 }
 
 .container .progress:hover{
-    height: 25px;
+    height: 30px;
     border-radius: 20px;
     box-shadow: 2px 4px 2px gray;
     transition: 0.5s;
@@ -288,4 +288,23 @@ section {
     background-color: rgb(255, 221, 0);
 }
 
+/* projects */
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.carousel{
+    height: 80vh;
+    width: 80%;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+iframe {
+    height: 80vh;
+    width: 100%;
+}
 
