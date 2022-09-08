@@ -285,7 +285,8 @@ section {
 }
 
 .container .progress:hover .progress-bar{
-    background-color: rgb(255, 221, 0);
+    /* background-color: rgb(255, 221, 0); */
+    background: linear-gradient(yellow, rgb(234, 208, 11))
 }
 
 /* projects */
@@ -295,6 +296,7 @@ section {
     justify-content: center;
     align-items: center;
     padding-top: 5%;
+    background: linear-gradient(yellow, white)
 }
 
 .carousel{
@@ -306,5 +308,21 @@ section {
 iframe {
     height: 80vh;
     width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    #projects{
+        /* padding-top: 0 !important; */
+    }
+
+    .carousel{
+        height: 40vh;
+        width: 90%;
+    }
+
+    iframe{
+        height: 40vh;
+        width: 100%;
+    }
 }
 
