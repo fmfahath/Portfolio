@@ -353,6 +353,7 @@ iframe {
 @media screen and (max-width:576px) {
     #pricing{
         padding-top: 0;
+        margin-bottom: 5%;
     }
 
     .container{
@@ -365,6 +366,7 @@ iframe {
 /* contact  */
 
 #contact{
+    padding-top: 5%;
     color: white;
     background-color: rgb(0, 0, 0);
 }
@@ -374,6 +376,12 @@ iframe {
     border-radius: 50px;
     border-color: transparent;
     background-color: yellow;
+}
+
+@media screen and (max-widh:576px) {
+    #contact{
+      margin-bottom: 5%;
+    }
 }
 
 
