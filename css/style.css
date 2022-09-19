@@ -332,6 +332,10 @@ iframe {
     padding-top: 5%;
 }
 
+#pricing button{
+    border-radius: 50px;
+}
+
 .card{
     margin-top: 5%;
     transition: 1s;
@@ -363,6 +367,13 @@ iframe {
 #contact{
     color: white;
     background-color: rgb(0, 0, 0);
+}
+
+#contact button{
+    color: black;
+    border-radius: 50px;
+    border-color: transparent;
+    background-color: yellow;
 }
 
 
